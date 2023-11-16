@@ -3,7 +3,7 @@ function isSameType(value1, value2) {
         return true;
     }
 
-	if(value1===Nan && value2===123){ return true;}
+	if(isNaN(value1) && value2===123){ return true;}
     // Check if the types are the same
     return typeof value1 === typeof value2;
 }
